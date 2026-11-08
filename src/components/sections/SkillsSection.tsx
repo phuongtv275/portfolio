@@ -6,7 +6,7 @@ export function SkillsSection() {
   const skillsCopy = siteConfig.sections.skills;
 
   return (
-    <section id="skills" className="scroll-mt-20 py-20 px-4 sm:px-6">
+    <section id="skills" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-white dark:bg-background transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">

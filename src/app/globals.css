@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Refined, Soothing Modern Theme (Light Mode) */
-  --background: #f0f3f1;
+  /* Alternating Eco-Tech Green & Crisp White Theme (Light Mode) */
+  --background: #ffffff;
   --foreground: #0f1712;
   --card: #ffffff;
   --card-foreground: #0f1712;

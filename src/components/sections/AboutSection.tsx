@@ -20,7 +20,7 @@ export function AboutSection() {
   };
 
   return (
-    <section id="about" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-muted/40 border-y border-border">
+    <section id="about" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-[#e8f5ec] dark:bg-muted/40 border-y border-[#c8decb] dark:border-border transition-colors">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12 items-start justify-between">
           {/* Left Column: Narrative & Education */}

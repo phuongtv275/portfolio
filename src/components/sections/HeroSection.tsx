@@ -8,7 +8,7 @@ export function HeroSection() {
   const heroCopy = siteConfig.sections.hero;
 
   return (
-    <section id="top" className="relative pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 overflow-hidden">
+    <section id="top" className="relative pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 overflow-hidden bg-white dark:bg-background transition-colors">
       {/* Background dynamic glow effects */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-primary/10 via-accent/15 to-secondary/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
