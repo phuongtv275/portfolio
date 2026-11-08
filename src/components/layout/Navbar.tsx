@@ -27,7 +27,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b border-[#c8decb] dark:border-border/80 bg-[#e8f5ec]/95 dark:bg-background/80 backdrop-blur-md transition-colors">
+      <header className="sticky top-0 z-50 w-full border-b border-[#a3d9b7] dark:border-border/80 bg-[#c7eed8]/95 dark:bg-background/80 backdrop-blur-md transition-colors">
         <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
           {/* Brand */}
           <Link
@@ -88,7 +88,7 @@ export function Navbar() {
         {mobileMenuOpen && (
           <div
             id="mobile-navigation"
-            className="md:hidden border-b border-[#c8decb] dark:border-border bg-[#e8f5ec] dark:bg-card px-4 pt-3 pb-6 space-y-3 shadow-lg"
+            className="md:hidden border-b border-[#a3d9b7] dark:border-border bg-[#c7eed8] dark:bg-card px-4 pt-3 pb-6 space-y-3 shadow-lg"
           >
             <nav className="flex flex-col space-y-1" aria-label="Mobile Navigation">
               {navItems.map((item) => (

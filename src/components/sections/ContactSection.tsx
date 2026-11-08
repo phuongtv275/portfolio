@@ -47,7 +47,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-20 py-24 px-4 sm:px-6 bg-[#e8f5ec] dark:bg-muted/40 border-t border-[#c8decb] dark:border-border transition-colors">
+    <section id="contact" className="scroll-mt-20 py-24 px-4 sm:px-6 bg-[#c7eed8] dark:bg-muted/40 border-t border-[#a3d9b7] dark:border-border transition-colors">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
           {contactCopy.tag}
