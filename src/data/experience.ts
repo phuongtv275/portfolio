@@ -1,0 +1,31 @@
+import { Experience } from "@/types";
+
+export const experienceData: Experience[] = [
+  {
+    id: "exp-dewly",
+    role: "AI Engineer",
+    company: "Dewly",
+    companyUrl: "https://dewly.com",
+    period: "05/2026 – 08/2026",
+    location: "Da Nang, Vietnam",
+    achievements: [
+      "Designed and built a standalone RBAC microservice (FastAPI) with fine-grained authorization APIs, including chunk-level permission filtering on Qdrant payloads for secure RAG retrieval across HR/Finance/Tech agents.",
+      "Architected a multi-source Knowledge Router exposing 2 data sources (Qdrant, LightRAG) as LLM-routable tools, eliminating the need for a separate intent classifier.",
+      "Integrated Hermes Agent with Google Calendar and Lark/Feishu to develop AI-powered tools to automate daily tasks and workflows.",
+      "Built an evaluation pipeline combining Langfuse (production tracing) and deepeval (Faithfulness, AnswerRelevancy, ConversationalGEval) against a golden dataset synthesized from internal wiki docs.",
+      "Built a personal knowledge-base chatbot using LangChain and LangGraph, following Karpathy's Wiki LLM architecture, with Chainlit as the chat interface."
+    ],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Qdrant",
+      "LightRAG",
+      "LangChain",
+      "LangGraph",
+      "Langfuse",
+      "deepeval",
+      "Chainlit",
+      "Docker"
+    ]
+  }
+];

@@ -1,0 +1,55 @@
+import { SkillCategory } from "@/types";
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: "LLM, Agents & Retrieval (RAG)",
+    description: "Designing autonomous agent workflows, chunk-level vector filtering, and multi-source knowledge routing.",
+    skills: [
+      { name: "LangChain", level: "Core" },
+      { name: "LangGraph", level: "Core" },
+      { name: "RAG & LightRAG", level: "Core" },
+      { name: "MCP (Model Context Protocol)", level: "Core" },
+      { name: "Qdrant Vector DB", level: "Core" },
+      { name: "FAISS", level: "Proficient" },
+      { name: "Chainlit", level: "Proficient" },
+      { name: "Langfuse & deepeval", level: "Proficient" }
+    ]
+  },
+  {
+    title: "AI, Machine Learning & Vision",
+    description: "Deep learning model training, computer vision object detection, GAN restoration, and data analysis.",
+    skills: [
+      { name: "Python", level: "Core" },
+      { name: "PyTorch", level: "Core" },
+      { name: "TensorFlow", level: "Proficient" },
+      { name: "Scikit-learn", level: "Proficient" },
+      { name: "OpenCV", level: "Proficient" },
+      { name: "NumPy & Pandas", level: "Core" },
+      { name: "YOLO (Object Detection)", level: "Proficient" },
+      { name: "Transformer-GAN", level: "Proficient" }
+    ]
+  },
+  {
+    title: "Backend Services & Databases",
+    description: "Building asynchronous API microservices, granular RBAC security, and performant data storage.",
+    skills: [
+      { name: "FastAPI", level: "Core" },
+      { name: "REST API & OpenAPI", level: "Core" },
+      { name: "Async Programming", level: "Core" },
+      { name: "PostgreSQL", level: "Core" },
+      { name: "MongoDB", level: "Proficient" },
+      { name: "Java", level: "Familiar" },
+      { name: "R", level: "Familiar" }
+    ]
+  },
+  {
+    title: "Tools, DevOps & Cloud",
+    description: "Containerization, cloud deployments, Unix server management, and automated evaluation pipelines.",
+    skills: [
+      { name: "Docker", level: "Core" },
+      { name: "Git / GitHub", level: "Core" },
+      { name: "Linux", level: "Core" },
+      { name: "AWS Cloud", level: "Proficient" }
+    ]
+  }
+];
