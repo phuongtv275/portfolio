@@ -27,7 +27,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-muted/90 backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
           {/* Brand */}
           <Link
@@ -61,7 +61,7 @@ export function Navbar() {
               external
               variant="outline"
               size="sm"
-              className="font-medium gap-1.5 bg-card shadow-xs"
+              className="font-medium gap-1.5"
             >
               <FileText className="h-3.5 w-3.5" />
               <span>{resume.label}</span>
@@ -74,7 +74,7 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg border border-border bg-card text-foreground hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer shadow-xs"
+              className="inline-flex items-center justify-center p-2 rounded-lg border border-border bg-card text-foreground hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer"
               aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-navigation"
@@ -88,7 +88,7 @@ export function Navbar() {
         {mobileMenuOpen && (
           <div
             id="mobile-navigation"
-            className="md:hidden border-b border-border bg-muted px-4 pt-3 pb-6 space-y-3 shadow-lg"
+            className="md:hidden border-b border-border bg-card px-4 pt-3 pb-6 space-y-3 shadow-lg"
           >
             <nav className="flex flex-col space-y-1" aria-label="Mobile Navigation">
               {navItems.map((item) => (
@@ -96,7 +96,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={closeMobileMenu}
-                  className="px-3 py-2 rounded-lg text-sm font-medium text-foreground hover:bg-card/70 transition-colors"
+                  className="px-3 py-2 rounded-lg text-sm font-medium text-foreground hover:bg-muted transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -108,7 +108,7 @@ export function Navbar() {
                 external
                 variant="outline"
                 size="sm"
-                className="w-full justify-center gap-1.5 bg-card shadow-xs"
+                className="w-full justify-center gap-1.5"
               >
                 <FileText className="h-3.5 w-3.5" />
                 <span>{resume.downloadLabel}</span>

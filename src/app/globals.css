@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Alternating Eco-Tech Green & Crisp White Theme (Light Mode) */
-  --background: #ffffff;
+  /* Refined, Soothing Modern Theme (Light Mode) */
+  --background: #f0f3f1;
   --foreground: #0f1712;
   --card: #ffffff;
   --card-foreground: #0f1712;
@@ -14,21 +14,21 @@
   --primary-foreground: #ffffff;
   --secondary: #334155;
   --secondary-foreground: #ffffff;
-  --muted: #e4f2e7;
-  --muted-foreground: #374f3f;
+  --muted: #e2e8e4;
+  --muted-foreground: #475569;
   --accent: #16a34a;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #c6ded0;
-  --input: #c6ded0;
+  --border: #cbd8cf;
+  --input: #cbd8cf;
   --ring: #0d7653;
 
   /* Custom 5-color palette tokens */
   --palette-silver: #94a3b8;
   --palette-mint: #16a34a;
   --palette-green: #0d7653;
-  --palette-sage: #374f3f;
+  --palette-sage: #475569;
   --palette-steel: #334155;
 }
 
@@ -44,14 +44,14 @@
   --primary-foreground: #071509;
   --secondary: #7e98a8;
   --secondary-foreground: #071509;
-  --muted: #112217;
+  --muted: #17241c;
   --muted-foreground: #9caea0;
   --accent: #79ed91;
   --accent-foreground: #07170a;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #1d3625;
-  --input: #1d3625;
+  --border: #213327;
+  --input: #213327;
   --ring: #4bde55;
 
   /* Custom 5-color palette tokens */

@@ -6,7 +6,7 @@ export function ExperienceSection() {
   const experienceCopy = siteConfig.sections.experience;
 
   return (
-    <section id="experience" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-muted border-y border-border">
+    <section id="experience" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-muted/30 border-y border-border">
       <div className="max-w-4xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
