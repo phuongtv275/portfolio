@@ -51,6 +51,7 @@ export interface Education {
 
 export interface SkillItem {
   name: string;
+  displayName?: string;
   level?: "Core" | "Proficient" | "Familiar";
 }
 

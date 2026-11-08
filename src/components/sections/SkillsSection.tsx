@@ -40,19 +40,19 @@ export function SkillsSection() {
                   {category.skills.map((skill, sIdx) => (
                     <div
                       key={sIdx}
-                      className="group/tile flex flex-col items-center justify-center p-3.5 rounded-xl border border-border bg-muted/40 hover:border-primary/50 hover:bg-muted hover:shadow-xs hover:scale-105 transition-all duration-200 cursor-default"
+                      className="group/tile flex flex-col items-center justify-between p-3 rounded-xl border border-border bg-muted/40 hover:border-primary/50 hover:bg-muted hover:shadow-xs hover:scale-105 transition-all duration-200 cursor-default min-h-[105px]"
                       title={`${skill.name} (${skill.level || "Proficient"})`}
                     >
                       <div className="w-9 h-9 flex items-center justify-center text-foreground/80 group-hover/tile:text-primary group-hover/tile:scale-110 transition-all duration-200">
                         <TechIcon name={skill.name} className="w-6 h-6" />
                       </div>
 
-                      <span className="mt-2 text-xs font-semibold text-foreground text-center line-clamp-1 group-hover/tile:text-primary transition-colors">
-                        {skill.name.split(" ")[0]}
+                      <span className="mt-1.5 text-xs font-semibold text-foreground text-center line-clamp-2 leading-tight group-hover/tile:text-primary transition-colors">
+                        {skill.displayName || skill.name}
                       </span>
 
                       {skill.level && (
-                        <span className="text-[10px] font-mono text-muted-foreground mt-0.5">
+                        <span className="text-[10px] font-mono text-muted-foreground mt-1">
                           {skill.level}
                         </span>
                       )}

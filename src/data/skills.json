@@ -5,12 +5,12 @@
     "skills": [
       { "name": "LangChain", "level": "Core" },
       { "name": "LangGraph", "level": "Core" },
-      { "name": "RAG & LightRAG", "level": "Core" },
-      { "name": "Qdrant Vector DB", "level": "Core" },
-      { "name": "MCP (Model Context Protocol)", "level": "Core" },
+      { "name": "RAG & LightRAG", "displayName": "RAG / LightRAG", "level": "Core" },
+      { "name": "Qdrant Vector DB", "displayName": "Qdrant", "level": "Core" },
+      { "name": "MCP (Model Context Protocol)", "displayName": "MCP", "level": "Core" },
       { "name": "FAISS", "level": "Proficient" },
       { "name": "Chainlit", "level": "Proficient" },
-      { "name": "Langfuse & deepeval", "level": "Proficient" }
+      { "name": "Langfuse & deepeval", "displayName": "Langfuse", "level": "Proficient" }
     ]
   },
   {
@@ -18,13 +18,13 @@
     "description": "Building scalable microservices, event-driven pipelines, API gateways, and resilient fault-tolerant systems.",
     "skills": [
       { "name": "Java", "level": "Core" },
-      { "name": "Spring Boot", "level": "Core" },
+      { "name": "Spring Boot", "displayName": "Spring Boot", "level": "Core" },
       { "name": "Microservices", "level": "Core" },
       { "name": "FastAPI", "level": "Core" },
-      { "name": "Apache Kafka", "level": "Proficient" },
+      { "name": "Apache Kafka", "displayName": "Kafka", "level": "Proficient" },
       { "name": "Resilience4j", "level": "Proficient" },
-      { "name": "Netflix Eureka", "level": "Proficient" },
-      { "name": "REST API & OpenAPI", "level": "Core" }
+      { "name": "Netflix Eureka", "displayName": "Eureka", "level": "Proficient" },
+      { "name": "REST API & OpenAPI", "displayName": "REST API", "level": "Core" }
     ]
   },
   {
@@ -33,12 +33,12 @@
     "skills": [
       { "name": "Python", "level": "Core" },
       { "name": "PyTorch", "level": "Core" },
-      { "name": "YOLO (Object Detection)", "level": "Proficient" },
+      { "name": "YOLO (Object Detection)", "displayName": "YOLO", "level": "Proficient" },
       { "name": "Transformer-GAN", "level": "Proficient" },
       { "name": "TensorFlow", "level": "Proficient" },
       { "name": "Scikit-learn", "level": "Proficient" },
       { "name": "OpenCV", "level": "Proficient" },
-      { "name": "NumPy & Pandas", "level": "Core" }
+      { "name": "NumPy & Pandas", "displayName": "NumPy / Pandas", "level": "Core" }
     ]
   },
   {
@@ -52,7 +52,7 @@
       { "name": "MongoDB", "level": "Proficient" },
       { "name": "Docker", "level": "Core" },
       { "name": "Linux", "level": "Core" },
-      { "name": "Git & GitHub", "level": "Core" }
+      { "name": "Git & GitHub", "displayName": "Git / GitHub", "level": "Core" }
     ]
   }
 ]
