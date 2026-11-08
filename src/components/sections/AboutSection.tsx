@@ -1,0 +1,111 @@
+import * as React from "react";
+import { personalData } from "@/data/personal";
+import { Brain, Bot, Server, Activity, GraduationCap } from "lucide-react";
+
+export function AboutSection() {
+  const highlights = [
+    {
+      icon: <Brain className="w-5 h-5 text-primary" />,
+      title: "RAG & Vector Knowledge Routing",
+      description: "Architecting multi-source vector retrieval with Qdrant, LightRAG, and chunk-level permission filtering.",
+    },
+    {
+      icon: <Bot className="w-5 h-5 text-primary" />,
+      title: "Autonomous Agent Workflows",
+      description: "Developing agent state machines using LangChain, LangGraph, Hermes Agent, and MCP integrations.",
+    },
+    {
+      icon: <Server className="w-5 h-5 text-secondary" />,
+      title: "API & Microservice Engineering",
+      description: "High-performance asynchronous backend services with FastAPI, granular RBAC, and clean RESTful design.",
+    },
+    {
+      icon: <Activity className="w-5 h-5 text-primary" />,
+      title: "LLM Observability & Evaluation",
+      description: "Production tracing with Langfuse and automated evaluation pipelines with deepeval (Faithfulness, GEval).",
+    },
+  ];
+
+  return (
+    <section id="about" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-muted/40 border-y border-border">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-12 items-start justify-between">
+          {/* Left Column: Narrative & Education */}
+          <div className="md:w-7/12">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
+              {"// 01. Background & Education"}
+            </h2>
+            <h3 className="mt-2 text-3xl font-extrabold text-foreground tracking-tight">
+              Building intelligent, production-ready AI systems
+            </h3>
+
+            <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-base">
+              {personalData.bio.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+
+            {/* Education Card */}
+            {personalData.education && personalData.education.length > 0 && (
+              <div className="mt-6 p-5 rounded-2xl border border-border bg-card shadow-xs hover:border-primary/50 transition-colors">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5">
+                    <div className="p-2 rounded-xl bg-muted border border-border">
+                      <GraduationCap className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-sm text-foreground">
+                        {personalData.education[0].institution}
+                      </h4>
+                      <p className="text-xs text-primary font-semibold">
+                        {personalData.education[0].degree} • GPA: {personalData.education[0].gpa}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-mono text-muted-foreground">
+                    {personalData.education[0].period}
+                  </span>
+                </div>
+                {personalData.education[0].thesis && (
+                  <p className="mt-3 pt-3 border-t border-border text-xs text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground font-semibold">Thesis:</strong> {personalData.education[0].thesis}
+                  </p>
+                )}
+              </div>
+            )}
+
+            <div className="mt-5 p-3.5 rounded-2xl border border-border bg-card/60 flex items-center gap-3">
+              <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
+              <p className="text-sm font-semibold text-foreground">
+                Location: <span className="text-muted-foreground font-normal">{personalData.location}</span>
+                {personalData.phone && (
+                  <span className="text-muted-foreground font-normal ml-3">• Phone: {personalData.phone}</span>
+                )}
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Core Engineering Focus */}
+          <div className="md:w-5/12 grid grid-cols-1 gap-3.5 w-full">
+            {highlights.map((item, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl border border-border bg-card p-4.5 transition-all duration-300 hover:border-primary/50 hover:shadow-md shadow-xs"
+              >
+                <div className="flex items-center gap-3 mb-1.5">
+                  <div className="p-2 rounded-xl bg-muted border border-border">
+                    {item.icon}
+                  </div>
+                  <h4 className="font-bold text-sm text-foreground">{item.title}</h4>
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed pl-1">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
