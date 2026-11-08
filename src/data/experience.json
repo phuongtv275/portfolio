@@ -1,7 +1,7 @@
 [
   {
     "id": "exp-dewly",
-    "role": "AI Engineer",
+    "role": "AI Engineer Intern",
     "company": "Dewly",
     "companyUrl": "https://dewly.ai",
     "period": "05/2026 – 08/2026",
@@ -23,6 +23,27 @@
       "Langfuse",
       "deepeval",
       "Chainlit",
+      "Docker"
+    ]
+  },
+  {
+    "id": "exp-fsoft",
+    "role": "Software Engineer Intern",
+    "company": "FSoft",
+    "companyUrl": "https://fptsoftware.com",
+    "period": "05/2024 – 09/2024",
+    "location": "Da Nang, Vietnam",
+    "achievements": [
+      "Developed and maintained REST APIs for backend microservices using Java and Spring Boot, following code review and testing practices as part of a collaborative engineering team.",
+      "Designed business logic for assigned APIs, translating requirements into scalable, maintainable microservice components.",
+      "Wrote Docker configurations to containerize services, supporting consistent build and deployment across environments."
+    ],
+    "technologies": [
+      "Java",
+      "Spring",
+      "Spring boot",
+      "MySQL",
+      "Thymeleaf",
       "Docker"
     ]
   }

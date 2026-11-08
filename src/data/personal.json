@@ -1,10 +1,10 @@
 {
   "name": "Truong Van Phuong",
-  "title": "AI Engineer & Backend Developer",
-  "tagline": "Building production AI-powered systems, LLM applications, RAG pipelines, and resilient backend microservices.",
+  "title": "AI Engineer & Software Engineer",
+  "tagline": "Architecting production AI/LLM systems, intelligent RAG pipelines, and high-performance distributed microservices.",
   "bio": [
-    "AI Engineer with hands-on experience building AI-powered systems, LLM applications, RAG pipelines, and backend services. Strong background in Python, machine learning, information retrieval, and API-driven development, with experience designing and integrating AI solutions for real-world applications.",
-    "B.S. in Artificial Intelligence from FPT University (GPA 7.9/10). Experienced in architecting standalone RBAC microservices on vector stores, multi-source Knowledge Routers (Qdrant & LightRAG), agent workflow automations, and deep learning model benchmarking."
+    "AI Engineer and Software Engineer with a solid foundation in core computer science, machine learning, and distributed software development. Experienced in building production-grade AI solutions, LLM applications, and multi-source RAG pipelines with chunk-level RBAC vector filtering, knowledge routing, and automated MLOps evaluation.",
+    "B.S. in Artificial Intelligence from FPT University (GPA 7.9/10). Strong engineering track record spanning enterprise Java backend microservices at FPT Software and high-throughput event-driven platforms with Spring Boot, Apache Kafka, Netflix Eureka, and Docker—delivering resilient systems with sub-millisecond response times (~0.8ms)."
   ],
   "location": "Da Nang, Vietnam",
   "phone": "+84 899899400",
@@ -24,12 +24,12 @@
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/trgphun",
+      "url": "https://github.com/phuongtv275",
       "iconName": "github"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com",
+      "url": "https://www.linkedin.com/in/van-phuong-truong-7bb233251/",
       "iconName": "linkedin"
     },
     {
@@ -42,6 +42,6 @@
     { "label": "AI & RAG Systems", "value": "Production" },
     { "label": "FPT University GPA", "value": "7.9/10" },
     { "label": "Vision Dataset Labeled", "value": "14,000+" },
-    { "label": "GAN SSIM Gain", "value": "+64%" }
+    { "label": "Microservice Response Time", "value": "~0.8 ms" }
   ]
 }

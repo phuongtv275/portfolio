@@ -1,15 +1,18 @@
 {
   "metadata": {
-    "title": "Truong Van Phuong | AI Engineer & Backend Developer",
-    "description": "Portfolio of Truong Van Phuong - AI Engineer specializing in LLM applications, RAG pipelines, autonomous agent workflows, and backend microservices.",
+    "title": "Truong Van Phuong | AI Engineer & Software Engineer",
+    "description": "Portfolio of Truong Van Phuong - AI Engineer and Software Engineer specializing in production AI/LLM systems, RAG pipelines, and resilient distributed microservices.",
     "keywords": [
       "AI Engineer",
+      "Software Engineer",
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "Kafka",
       "LLM",
       "RAG",
       "LightRAG",
       "Qdrant",
-      "LangChain",
-      "LangGraph",
       "FastAPI",
       "Python",
       "Backend Developer"
@@ -36,42 +39,42 @@
       "headlinePrefix": "Building",
       "headlineHighlight1": "Production AI",
       "headlineMiddle": "& Resilient",
-      "headlineHighlight2": "Backend Services",
-      "availabilityBadge": "Available for High-Impact Full-time & AI Consulting",
+      "headlineHighlight2": "Microservices",
+      "availabilityBadge": "Available for Full-Time AI Engineer & Software Engineer Roles",
       "ctaProjects": "Explore Projects",
       "ctaResume": "Resume (PDF)",
       "ctaContact": "Get in Touch"
     },
     "about": {
       "tag": "// 01. Background & Education",
-      "heading": "Building intelligent, production-ready AI systems",
+      "heading": "Bridging Production AI Systems with Resilient Enterprise Architecture",
       "highlights": [
         {
           "icon": "brain",
           "title": "RAG & Vector Knowledge Routing",
-          "description": "Architecting multi-source vector retrieval with Qdrant, LightRAG, and chunk-level permission filtering."
+          "description": "Architecting multi-source vector retrieval with Qdrant, LightRAG, and fine-grained chunk-level RBAC filtering across enterprise agents."
         },
         {
           "icon": "bot",
           "title": "Autonomous Agent Workflows",
-          "description": "Developing agent state machines using LangChain, LangGraph, Hermes Agent, and MCP integrations."
+          "description": "Developing agent state machines using LangChain, LangGraph, Hermes Agent, and MCP integrations with Google Calendar and Lark/Feishu."
         },
         {
           "icon": "server",
-          "title": "API & Microservice Engineering",
-          "description": "High-performance asynchronous backend services with FastAPI, granular RBAC, and clean RESTful design."
+          "title": "Distributed Microservices & Event-Driven",
+          "description": "Engineering 7-microservice platforms with Java, Spring Boot, Apache Kafka (transactional outbox & idempotency), Eureka, and sub-millisecond response (~0.8ms)."
         },
         {
           "icon": "activity",
-          "title": "LLM Observability & Evaluation",
-          "description": "Production tracing with Langfuse and automated evaluation pipelines with deepeval (Faithfulness, GEval)."
+          "title": "MLOps, Observability & Resilience",
+          "description": "Production LLM tracing with Langfuse, automated deepeval evaluation pipelines, and fault-tolerant architecture with Resilience4j and Docker."
         }
       ]
     },
     "skills": {
       "tag": "// 02. Technical Arsenal",
       "heading": "Specialized Tech Stack & Production Tooling",
-      "description": "Technologies, frameworks, and infrastructure components I engineer with daily."
+      "description": "Core languages, distributed backend frameworks, AI/ML retrieval tools, and infrastructure I engineer with daily."
     },
     "experience": {
       "tag": "// 03. Track Record",
@@ -86,10 +89,10 @@
     "contact": {
       "tag": "// 05. Get In Touch",
       "heading": "Ready to build your next AI & backend system?",
-      "description": "Looking for an AI Engineer with proven experience in LLMs, RAG architectures, and FastAPI microservices? I am open to high-impact full-time roles and innovative AI consulting projects."
+      "description": "Looking for an AI Engineer or Software Engineer with proven experience in LLMs, RAG architectures, and scalable Spring Boot / FastAPI microservices? I am open to impactful full-time opportunities."
     },
     "footer": {
-      "credit": "Built with Next.js (App Router), TypeScript & Tailwind CSS. Designed for high performance and vivid visual clarity.",
+      "credit": "Built with Next.js 16 (App Router), TypeScript & Tailwind CSS v4. Designed for high performance and vivid visual clarity.",
       "backToTop": "Back to top"
     }
   }
