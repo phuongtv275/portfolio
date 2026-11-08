@@ -62,7 +62,7 @@ export function ContactSection() {
         {/* Contact Action Bar (Email & Phone) */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
           {/* Email Box */}
-          <div className="inline-flex items-center gap-2 p-2 rounded-2xl border border-border bg-card shadow-xs hover:border-primary/50 transition-colors">
+          <div className="inline-flex items-center gap-2 p-2 rounded-2xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300">
             <div className="flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm font-mono font-medium text-foreground">
               <Mail className="w-4 h-4 text-primary" />
               <span>{personalData.email}</span>
@@ -89,7 +89,7 @@ export function ContactSection() {
             <Button
               href={`mailto:${personalData.email}`}
               size="sm"
-              className="font-bold"
+              className="font-bold shadow-xs"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Email</span>
@@ -98,7 +98,7 @@ export function ContactSection() {
 
           {/* Phone Box */}
           {personalData.phone && (
-            <div className="inline-flex items-center gap-2 p-2 rounded-2xl border border-border bg-card shadow-xs hover:border-primary/50 transition-colors">
+            <div className="inline-flex items-center gap-2 p-2 rounded-2xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm font-mono font-medium text-foreground">
                 <Phone className="w-4 h-4 text-primary" />
                 <span>{personalData.phone}</span>
@@ -133,7 +133,7 @@ export function ContactSection() {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4.5 py-2.5 rounded-xl border border-border bg-card hover:border-primary/50 hover:bg-muted text-xs font-semibold text-foreground transition-all duration-200 shadow-xs"
+              className="inline-flex items-center gap-2 px-4.5 py-2.5 rounded-xl border border-border bg-card hover:border-primary/50 hover:bg-muted text-xs font-semibold text-foreground transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5"
             >
               {getSocialIcon(social.name)}
               <span>{social.name}</span>

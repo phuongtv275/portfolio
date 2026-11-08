@@ -24,7 +24,7 @@ export function SkillsSection() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="flex flex-col justify-between rounded-2xl border border-border bg-card p-6 sm:p-7 shadow-xs hover:border-primary/50 hover:shadow-md transition-all duration-300"
+              className="flex flex-col justify-between rounded-2xl border border-border bg-card p-6 sm:p-7 shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300"
             >
               <div>
                 <h4 className="text-lg font-bold text-foreground flex items-center gap-2">
@@ -40,7 +40,7 @@ export function SkillsSection() {
                   {category.skills.map((skill, sIdx) => (
                     <div
                       key={sIdx}
-                      className="group/tile flex flex-col items-center justify-between p-3 rounded-xl border border-border bg-muted/40 hover:border-primary/50 hover:bg-muted hover:shadow-xs hover:scale-105 transition-all duration-200 cursor-default min-h-[105px]"
+                      className="group/tile flex flex-col items-center justify-between p-3 rounded-xl border border-border/80 bg-muted/60 hover:border-primary/50 hover:bg-muted hover:shadow-sm hover:scale-105 transition-all duration-200 cursor-default min-h-[105px]"
                       title={`${skill.name} (${skill.level || "Proficient"})`}
                     >
                       <div className="w-9 h-9 flex items-center justify-center text-foreground/80 group-hover/tile:text-primary group-hover/tile:scale-110 transition-all duration-200">

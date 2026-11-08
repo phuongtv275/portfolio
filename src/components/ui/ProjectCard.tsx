@@ -36,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const meta = getCategoryMeta(project.category);
 
   return (
-    <article className="group relative flex flex-col justify-between rounded-2xl border border-border bg-card p-6 shadow-xs hover:shadow-lg hover:border-primary/50 transition-all duration-300">
+    <article className="group relative flex flex-col justify-between rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300">
       <div>
         <div className="flex items-center justify-between gap-2 mb-3.5">
           <Badge variant={meta.variant} className="flex items-center gap-1.5 py-1 px-3">

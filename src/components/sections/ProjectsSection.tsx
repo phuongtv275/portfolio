@@ -63,7 +63,7 @@ export function ProjectsSection() {
                 className={`inline-flex items-center gap-2 px-4.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                   isActive
                     ? "bg-primary text-primary-foreground shadow-md shadow-primary/20 scale-105"
-                    : "bg-card border border-border text-muted-foreground hover:text-foreground hover:bg-muted"
+                    : "bg-card border border-border text-muted-foreground hover:text-foreground hover:bg-muted shadow-xs hover:shadow-sm"
                 }`}
               >
                 {renderCategoryIcon(cat.icon, isActive)}

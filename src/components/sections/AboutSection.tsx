@@ -40,7 +40,7 @@ export function AboutSection() {
 
             {/* Education Card */}
             {personalData.education && personalData.education.length > 0 && (
-              <div className="mt-6 p-5 rounded-2xl border border-border bg-card shadow-xs hover:border-primary/50 transition-colors">
+              <div className="mt-6 p-5 rounded-2xl border border-border bg-card shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300">
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2.5">
                     <div className="p-2 rounded-xl bg-muted border border-border">
@@ -67,7 +67,7 @@ export function AboutSection() {
               </div>
             )}
 
-            <div className="mt-5 p-3.5 rounded-2xl border border-border bg-card/60 flex items-center gap-3">
+            <div className="mt-5 p-3.5 rounded-2xl border border-border bg-card shadow-sm flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
               <p className="text-sm font-semibold text-foreground">
                 Location: <span className="text-muted-foreground font-normal">{personalData.location}</span>
@@ -83,7 +83,7 @@ export function AboutSection() {
             {aboutCopy.highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl border border-border bg-card p-4.5 transition-all duration-300 hover:border-primary/50 hover:shadow-md shadow-xs"
+                className="rounded-2xl border border-border bg-card p-4.5 transition-all duration-300 hover:border-primary/50 hover:shadow-md hover:-translate-y-0.5 shadow-sm"
               >
                 <div className="flex items-center gap-3 mb-1.5">
                   <div className="p-2 rounded-xl bg-muted border border-border">

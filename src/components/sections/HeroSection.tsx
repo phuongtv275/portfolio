@@ -26,11 +26,11 @@ export function HeroSection() {
         {/* Dynamic & Bright Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.12]">
           {heroCopy.headlinePrefix}{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-teal-600 dark:from-primary dark:via-accent dark:to-secondary">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-teal-700 dark:from-primary dark:via-accent dark:to-secondary">
             {heroCopy.headlineHighlight1}
           </span>{" "}
           <br className="hidden sm:inline" />{heroCopy.headlineMiddle}{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-primary to-emerald-600 dark:from-accent dark:via-primary dark:to-secondary">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 via-primary to-emerald-600 dark:from-accent dark:via-primary dark:to-secondary">
             {heroCopy.headlineHighlight2}
           </span>
         </h1>
@@ -47,7 +47,7 @@ export function HeroSection() {
             <ArrowRight className="w-4 h-4" />
           </Button>
 
-          <Button href={personalData.resumeUrl} external variant="outline" size="lg">
+          <Button href={personalData.resumeUrl} external variant="outline" size="lg" className="bg-card shadow-xs">
             <FileText className="w-4 h-4 text-muted-foreground" />
             <span>{heroCopy.ctaResume}</span>
           </Button>
@@ -63,7 +63,7 @@ export function HeroSection() {
           {personalData.stats.map((stat, i) => (
             <div
               key={i}
-              className="rounded-2xl border border-border bg-card p-4 sm:p-5 shadow-xs hover:border-primary/50 hover:shadow-md transition-all duration-300"
+              className="rounded-2xl border border-border bg-card p-4 sm:p-5 shadow-sm hover:border-primary/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
             >
               <div className="text-2xl sm:text-3xl font-extrabold font-mono text-primary">
                 {stat.value}

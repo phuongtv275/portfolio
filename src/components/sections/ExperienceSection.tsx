@@ -24,12 +24,12 @@ export function ExperienceSection() {
           {experienceData.map((item) => (
             <div key={item.id} className="relative group">
               {/* Timeline marker node */}
-              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary bg-card shadow-xs group-hover:scale-125 transition-transform duration-200">
+              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary bg-card shadow-sm group-hover:scale-125 transition-transform duration-200">
                 <div className="h-2 w-2 rounded-full bg-primary" />
               </div>
 
               {/* Card content */}
-              <div className="rounded-2xl border border-border bg-card p-6 shadow-xs transition-all duration-300 hover:border-primary/50 hover:shadow-md">
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-md hover:-translate-y-0.5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-border">
                   <div>
                     <h4 className="text-lg font-bold text-foreground">

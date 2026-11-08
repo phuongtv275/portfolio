@@ -3,33 +3,33 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Dynamic, Bright Theme (Light Mode) */
-  --background: #f7faf8;
-  --foreground: #141c16;
+  /* Refined, Soothing Modern Theme (Light Mode) */
+  --background: #f0f3f1;
+  --foreground: #0f1712;
   --card: #ffffff;
-  --card-foreground: #141c16;
+  --card-foreground: #0f1712;
   --popover: #ffffff;
-  --popover-foreground: #141c16;
-  --primary: #15803d;
+  --popover-foreground: #0f1712;
+  --primary: #0d7653;
   --primary-foreground: #ffffff;
-  --secondary: #4b6473;
+  --secondary: #334155;
   --secondary-foreground: #ffffff;
-  --muted: #edf3ee;
-  --muted-foreground: #526054;
-  --accent: #22c55e;
-  --accent-foreground: #07170a;
+  --muted: #e2e8e4;
+  --muted-foreground: #475569;
+  --accent: #16a34a;
+  --accent-foreground: #ffffff;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #d6ded7;
-  --input: #d6ded7;
-  --ring: #15803d;
+  --border: #cbd8cf;
+  --input: #cbd8cf;
+  --ring: #0d7653;
 
   /* Custom 5-color palette tokens */
-  --palette-silver: #bebebe;
-  --palette-mint: #22c55e;
-  --palette-green: #15803d;
-  --palette-sage: #526054;
-  --palette-steel: #4b6473;
+  --palette-silver: #94a3b8;
+  --palette-mint: #16a34a;
+  --palette-green: #0d7653;
+  --palette-sage: #475569;
+  --palette-steel: #334155;
 }
 
 .dark {
