@@ -1,30 +1,23 @@
 import * as React from "react";
-import { personalData } from "@/data/personal";
+import { personalData, siteConfig } from "@/data";
 import { Brain, Bot, Server, Activity, GraduationCap } from "lucide-react";
 
 export function AboutSection() {
-  const highlights = [
-    {
-      icon: <Brain className="w-5 h-5 text-primary" />,
-      title: "RAG & Vector Knowledge Routing",
-      description: "Architecting multi-source vector retrieval with Qdrant, LightRAG, and chunk-level permission filtering.",
-    },
-    {
-      icon: <Bot className="w-5 h-5 text-primary" />,
-      title: "Autonomous Agent Workflows",
-      description: "Developing agent state machines using LangChain, LangGraph, Hermes Agent, and MCP integrations.",
-    },
-    {
-      icon: <Server className="w-5 h-5 text-secondary" />,
-      title: "API & Microservice Engineering",
-      description: "High-performance asynchronous backend services with FastAPI, granular RBAC, and clean RESTful design.",
-    },
-    {
-      icon: <Activity className="w-5 h-5 text-primary" />,
-      title: "LLM Observability & Evaluation",
-      description: "Production tracing with Langfuse and automated evaluation pipelines with deepeval (Faithfulness, GEval).",
-    },
-  ];
+  const aboutCopy = siteConfig.sections.about;
+
+  const renderHighlightIcon = (iconName: string) => {
+    switch (iconName.toLowerCase()) {
+      case "brain":
+        return <Brain className="w-5 h-5 text-primary" />;
+      case "bot":
+        return <Bot className="w-5 h-5 text-primary" />;
+      case "server":
+        return <Server className="w-5 h-5 text-secondary" />;
+      case "activity":
+      default:
+        return <Activity className="w-5 h-5 text-primary" />;
+    }
+  };
 
   return (
     <section id="about" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-muted/40 border-y border-border">
@@ -33,10 +26,10 @@ export function AboutSection() {
           {/* Left Column: Narrative & Education */}
           <div className="md:w-7/12">
             <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
-              {"// 01. Background & Education"}
+              {aboutCopy.tag}
             </h2>
             <h3 className="mt-2 text-3xl font-extrabold text-foreground tracking-tight">
-              Building intelligent, production-ready AI systems
+              {aboutCopy.heading}
             </h3>
 
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-base">
@@ -87,14 +80,14 @@ export function AboutSection() {
 
           {/* Right Column: Core Engineering Focus */}
           <div className="md:w-5/12 grid grid-cols-1 gap-3.5 w-full">
-            {highlights.map((item, idx) => (
+            {aboutCopy.highlights.map((item, idx) => (
               <div
                 key={idx}
                 className="rounded-2xl border border-border bg-card p-4.5 transition-all duration-300 hover:border-primary/50 hover:shadow-md shadow-xs"
               >
                 <div className="flex items-center gap-3 mb-1.5">
                   <div className="p-2 rounded-xl bg-muted border border-border">
-                    {item.icon}
+                    {renderHighlightIcon(item.icon)}
                   </div>
                   <h4 className="font-bold text-sm text-foreground">{item.title}</h4>
                 </div>

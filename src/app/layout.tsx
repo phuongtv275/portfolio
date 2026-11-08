@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { siteConfig } from "@/data";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,22 +20,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Truong Van Phuong | AI Engineer & Backend Developer",
-  description:
-    "Portfolio of Truong Van Phuong - AI Engineer specializing in LLM applications, RAG pipelines, autonomous agent workflows, and backend microservices.",
-  keywords: [
-    "AI Engineer",
-    "LLM",
-    "RAG",
-    "LightRAG",
-    "Qdrant",
-    "LangChain",
-    "LangGraph",
-    "FastAPI",
-    "Python",
-    "Backend Developer",
-  ],
-  authors: [{ name: "Truong Van Phuong" }],
+  title: siteConfig.metadata.title,
+  description: siteConfig.metadata.description,
+  keywords: siteConfig.metadata.keywords,
+  authors: [{ name: siteConfig.metadata.author }],
 };
 
 export default function RootLayout({

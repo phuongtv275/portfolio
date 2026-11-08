@@ -11,6 +11,24 @@ export interface Project {
   featured?: boolean;
 }
 
+export interface ProjectCategoryFilter {
+  id: "all" | "ai" | "backend" | "fullstack";
+  label: string;
+  icon: string;
+}
+
+export interface EmptyStateConfig {
+  title: string;
+  description: string;
+  actionLabel: string;
+}
+
+export interface ProjectsConfig {
+  categories: ProjectCategoryFilter[];
+  emptyState: EmptyStateConfig;
+  items: Project[];
+}
+
 export interface Experience {
   id: string;
   role: string;
@@ -64,4 +82,84 @@ export interface PersonalInfo {
     label: string;
     value: string;
   }[];
+}
+
+export interface SiteMetadata {
+  title: string;
+  description: string;
+  keywords: string[];
+  author: string;
+}
+
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
+export interface ResumeConfig {
+  label: string;
+  downloadLabel: string;
+  url: string;
+}
+
+export interface NavigationConfig {
+  brandName: string;
+  navItems: NavItem[];
+  resume: ResumeConfig;
+}
+
+export interface HeroSectionCopy {
+  headlinePrefix: string;
+  headlineHighlight1: string;
+  headlineMiddle: string;
+  headlineHighlight2: string;
+  availabilityBadge: string;
+  ctaProjects: string;
+  ctaResume: string;
+  ctaContact: string;
+}
+
+export interface AboutHighlight {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface AboutSectionCopy {
+  tag: string;
+  heading: string;
+  highlights: AboutHighlight[];
+}
+
+export interface SimpleSectionCopy {
+  tag: string;
+  heading: string;
+  description: string;
+}
+
+export interface ContactSectionCopy {
+  tag: string;
+  heading: string;
+  description: string;
+}
+
+export interface FooterSectionCopy {
+  credit: string;
+  backToTop: string;
+}
+
+export interface SiteSectionsConfig {
+  hero: HeroSectionCopy;
+  about: AboutSectionCopy;
+  skills: SimpleSectionCopy;
+  experience: SimpleSectionCopy;
+  projects: SimpleSectionCopy;
+  contact: ContactSectionCopy;
+  footer: FooterSectionCopy;
+}
+
+export interface SiteConfig {
+  metadata: SiteMetadata;
+  navigation: NavigationConfig;
+  sections: SiteSectionsConfig;
 }

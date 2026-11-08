@@ -5,17 +5,11 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Button } from "@/components/ui/Button";
 import { FileText, Menu, X, Terminal } from "lucide-react";
-
-const NAV_ITEMS = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+import { siteConfig } from "@/data";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const { brandName, navItems, resume } = siteConfig.navigation;
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
@@ -43,12 +37,12 @@ export function Navbar() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary border border-primary/20">
               <Terminal className="h-4 w-4" />
             </div>
-            <span>phuongtv.dev</span>
+            <span>{brandName}</span>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6" aria-label="Main Navigation">
-            {NAV_ITEMS.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -63,14 +57,14 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
             <Button
-              href="/assets/resume.pdf"
+              href={resume.url}
               external
               variant="outline"
               size="sm"
               className="font-medium gap-1.5"
             >
               <FileText className="h-3.5 w-3.5" />
-              <span>Resume</span>
+              <span>{resume.label}</span>
             </Button>
           </div>
 
@@ -97,7 +91,7 @@ export function Navbar() {
             className="md:hidden border-b border-border bg-card px-4 pt-3 pb-6 space-y-3 shadow-lg"
           >
             <nav className="flex flex-col space-y-1" aria-label="Mobile Navigation">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -110,14 +104,14 @@ export function Navbar() {
             </nav>
             <div className="pt-2 border-t border-border">
               <Button
-                href="/assets/resume.pdf"
+                href={resume.url}
                 external
                 variant="outline"
                 size="sm"
                 className="w-full justify-center gap-1.5"
               >
                 <FileText className="h-3.5 w-3.5" />
-                <span>Download Resume</span>
+                <span>{resume.downloadLabel}</span>
               </Button>
             </div>
           </div>

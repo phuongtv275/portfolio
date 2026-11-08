@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Truong Van Phuong | AI Engineer & Backend Developer",
+    "description": "Portfolio of Truong Van Phuong - AI Engineer specializing in LLM applications, RAG pipelines, autonomous agent workflows, and backend microservices.",
+    "keywords": [
+      "AI Engineer",
+      "LLM",
+      "RAG",
+      "LightRAG",
+      "Qdrant",
+      "LangChain",
+      "LangGraph",
+      "FastAPI",
+      "Python",
+      "Backend Developer"
+    ],
+    "author": "Truong Van Phuong"
+  },
+  "navigation": {
+    "brandName": "phuongtv.dev",
+    "navItems": [
+      { "label": "About", "href": "#about" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "resume": {
+      "label": "Resume",
+      "downloadLabel": "Download Resume",
+      "url": "/assets/resume.pdf"
+    }
+  },
+  "sections": {
+    "hero": {
+      "headlinePrefix": "Building",
+      "headlineHighlight1": "Production AI",
+      "headlineMiddle": "& Resilient",
+      "headlineHighlight2": "Backend Services",
+      "availabilityBadge": "Available for High-Impact Full-time & AI Consulting",
+      "ctaProjects": "Explore Projects",
+      "ctaResume": "Resume (PDF)",
+      "ctaContact": "Get in Touch"
+    },
+    "about": {
+      "tag": "// 01. Background & Education",
+      "heading": "Building intelligent, production-ready AI systems",
+      "highlights": [
+        {
+          "icon": "brain",
+          "title": "RAG & Vector Knowledge Routing",
+          "description": "Architecting multi-source vector retrieval with Qdrant, LightRAG, and chunk-level permission filtering."
+        },
+        {
+          "icon": "bot",
+          "title": "Autonomous Agent Workflows",
+          "description": "Developing agent state machines using LangChain, LangGraph, Hermes Agent, and MCP integrations."
+        },
+        {
+          "icon": "server",
+          "title": "API & Microservice Engineering",
+          "description": "High-performance asynchronous backend services with FastAPI, granular RBAC, and clean RESTful design."
+        },
+        {
+          "icon": "activity",
+          "title": "LLM Observability & Evaluation",
+          "description": "Production tracing with Langfuse and automated evaluation pipelines with deepeval (Faithfulness, GEval)."
+        }
+      ]
+    },
+    "skills": {
+      "tag": "// 02. Technical Arsenal",
+      "heading": "Specialized Tech Stack & Production Tooling",
+      "description": "Technologies, frameworks, and infrastructure components I engineer with daily."
+    },
+    "experience": {
+      "tag": "// 03. Track Record",
+      "heading": "Work Experience & Milestones",
+      "description": "A chronological timeline of roles delivering backend scalability and AI breakthroughs."
+    },
+    "projects": {
+      "tag": "// 04. Selected Works",
+      "heading": "Featured Projects & Live Demos",
+      "description": "Real-world systems, open-source tools, and interactive AI application deployments."
+    },
+    "contact": {
+      "tag": "// 05. Get In Touch",
+      "heading": "Ready to build your next AI & backend system?",
+      "description": "Looking for an AI Engineer with proven experience in LLMs, RAG architectures, and FastAPI microservices? I am open to high-impact full-time roles and innovative AI consulting projects."
+    },
+    "footer": {
+      "credit": "Built with Next.js (App Router), TypeScript & Tailwind CSS. Designed for high performance and vivid visual clarity.",
+      "backToTop": "Back to top"
+    }
+  }
+}

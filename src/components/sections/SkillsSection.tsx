@@ -1,20 +1,22 @@
 import * as React from "react";
-import { skillCategories } from "@/data/skills";
+import { skillCategories, siteConfig } from "@/data";
 import { TechIcon } from "@/components/ui/TechIcon";
 
 export function SkillsSection() {
+  const skillsCopy = siteConfig.sections.skills;
+
   return (
     <section id="skills" className="scroll-mt-20 py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
-            {"// 02. Technical Arsenal"}
+            {skillsCopy.tag}
           </h2>
           <h3 className="mt-2 text-3xl font-extrabold text-foreground tracking-tight">
-            Specialized Tech Stack & Production Tooling
+            {skillsCopy.heading}
           </h3>
           <p className="mt-3 text-sm text-muted-foreground">
-            Technologies, frameworks, and infrastructure components I engineer with daily.
+            {skillsCopy.description}
           </p>
         </div>
 

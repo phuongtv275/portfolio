@@ -1,20 +1,22 @@
 import * as React from "react";
-import { experienceData } from "@/data/experience";
+import { experienceData, siteConfig } from "@/data";
 import { Calendar, MapPin } from "lucide-react";
 
 export function ExperienceSection() {
+  const experienceCopy = siteConfig.sections.experience;
+
   return (
     <section id="experience" className="scroll-mt-20 py-20 px-4 sm:px-6 bg-muted/30 border-y border-border">
       <div className="max-w-4xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
-            {"// 03. Track Record"}
+            {experienceCopy.tag}
           </h2>
           <h3 className="mt-2 text-3xl font-extrabold text-foreground tracking-tight">
-            Work Experience & Milestones
+            {experienceCopy.heading}
           </h3>
           <p className="mt-3 text-sm text-muted-foreground">
-            A chronological timeline of roles delivering backend scalability and AI breakthroughs.
+            {experienceCopy.description}
           </p>
         </div>
 

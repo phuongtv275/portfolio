@@ -1,10 +1,12 @@
 import * as React from "react";
-import { personalData } from "@/data/personal";
+import { personalData, siteConfig } from "@/data";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ArrowRight, FileText, Mail } from "lucide-react";
 
 export function HeroSection() {
+  const heroCopy = siteConfig.sections.hero;
+
   return (
     <section id="top" className="relative pt-20 pb-16 md:pt-28 md:pb-24 px-4 sm:px-6 overflow-hidden">
       {/* Background dynamic glow effects */}
@@ -16,20 +18,20 @@ export function HeroSection() {
           <div className="inline-flex items-center mb-6">
             <Badge variant="success" className="gap-2 py-1.5 px-3.5 text-xs shadow-xs">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="font-bold">Available for High-Impact Full-time & AI Consulting</span>
+              <span className="font-bold">{heroCopy.availabilityBadge}</span>
             </Badge>
           </div>
         )}
 
         {/* Dynamic & Bright Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.12]">
-          Building{" "}
+          {heroCopy.headlinePrefix}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-teal-600 dark:from-primary dark:via-accent dark:to-secondary">
-            Production AI
+            {heroCopy.headlineHighlight1}
           </span>{" "}
-          <br className="hidden sm:inline" />& Resilient{" "}
+          <br className="hidden sm:inline" />{heroCopy.headlineMiddle}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-primary to-emerald-600 dark:from-accent dark:via-primary dark:to-secondary">
-            Backend Services
+            {heroCopy.headlineHighlight2}
           </span>
         </h1>
 
@@ -41,18 +43,18 @@ export function HeroSection() {
         {/* Call to Actions */}
         <div className="mt-8 flex flex-wrap items-center gap-3.5">
           <Button href="#projects" size="lg" className="shadow-md">
-            <span>Explore Projects</span>
+            <span>{heroCopy.ctaProjects}</span>
             <ArrowRight className="w-4 h-4" />
           </Button>
 
-          <Button href="/assets/resume.pdf" external variant="outline" size="lg">
+          <Button href={personalData.resumeUrl} external variant="outline" size="lg">
             <FileText className="w-4 h-4 text-muted-foreground" />
-            <span>Resume (PDF)</span>
+            <span>{heroCopy.ctaResume}</span>
           </Button>
 
           <Button href="#contact" variant="ghost" size="lg">
             <Mail className="w-4 h-4 text-muted-foreground" />
-            <span>Get in Touch</span>
+            <span>{heroCopy.ctaContact}</span>
           </Button>
         </div>
 

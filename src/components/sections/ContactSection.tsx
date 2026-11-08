@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { personalData } from "@/data/personal";
+import { personalData, siteConfig } from "@/data";
 import { Button } from "@/components/ui/Button";
 import { Mail, Copy, Check, Send, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/Icons";
@@ -9,6 +9,7 @@ import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/Icons";
 export function ContactSection() {
   const [copiedEmail, setCopiedEmail] = React.useState(false);
   const [copiedPhone, setCopiedPhone] = React.useState(false);
+  const contactCopy = siteConfig.sections.contact;
 
   const handleCopyEmail = async () => {
     try {
@@ -49,13 +50,13 @@ export function ContactSection() {
     <section id="contact" className="scroll-mt-20 py-24 px-4 sm:px-6 bg-muted/40 border-t border-border">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-primary">
-          {"// 05. Get In Touch"}
+          {contactCopy.tag}
         </h2>
         <h3 className="mt-2 text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-          Ready to build your next AI & backend system?
+          {contactCopy.heading}
         </h3>
         <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
-          Looking for an AI Engineer with proven experience in LLMs, RAG architectures, and FastAPI microservices? I am open to high-impact full-time roles and innovative AI consulting projects.
+          {contactCopy.description}
         </p>
 
         {/* Contact Action Bar (Email & Phone) */}

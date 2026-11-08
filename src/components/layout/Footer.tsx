@@ -1,9 +1,11 @@
 import * as React from "react";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
-import { personalData } from "@/data/personal";
+import { personalData, siteConfig } from "@/data";
 
 export function Footer() {
+  const footerCopy = siteConfig.sections.footer;
+
   return (
     <footer className="border-t border-border bg-card py-12 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
@@ -12,7 +14,7 @@ export function Footer() {
             {personalData.name} — <span className="text-primary">{personalData.title}</span>
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            Built with Next.js (App Router), TypeScript & Tailwind CSS. Designed for high performance and vivid visual clarity.
+            {footerCopy.credit}
           </p>
         </div>
 
@@ -34,8 +36,8 @@ export function Footer() {
           <Link
             href="#top"
             className="inline-flex items-center justify-center w-8 h-8 rounded-xl border border-border bg-muted hover:border-primary/50 hover:text-primary text-foreground transition-all"
-            aria-label="Back to top"
-            title="Back to top"
+            aria-label={footerCopy.backToTop}
+            title={footerCopy.backToTop}
           >
             <ArrowUp className="w-4 h-4" />
           </Link>
